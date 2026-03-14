@@ -78,11 +78,15 @@
     margin-bottom: 8px;
 }
 
-    .main_cv .container .view_content .container_view .title-icon {
-        font-size: 13px;
-        color: #4b5563;
-        margin-right: 8px;
-    }
+.main_cv .container .view_content .container_view .title-icon {
+    font-size: 13px;
+    color: #4b5563;
+    margin-right: 8px;
+}
+
+.main_cv .container .view_content .container_view .content_inf .mobile_profile_photo {
+    display: none;
+}
 
 .main_cv .container .view_content .container_view .content_inf .profile_table {
     width: 100%;
@@ -428,23 +432,172 @@
     /* END GITHUB PROJECTS */
 
 @media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
     .header_view {
-        flex-direction: column;
-        gap: 8px;
-        align-items: flex-start;
+        padding: 8px 12px;
+    }
+
+    .header_view .watch_cv {
+        font-size: 13px;
+    }
+
+    .header_view .btn_download {
+        font-size: 13px;
+        padding: 5px 10px;
     }
 
     .main_cv {
-        padding-top: 95px;
+        padding-top: 70px;
+        padding-bottom: 40px;
     }
 
     .main_cv .container .view_content {
         padding: 20px;
     }
 
+    .main_cv .container .view_content .container_view {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .head_name {
+        font-size: 22px;
+        line-height: 1.15;
+        margin-bottom: 8px;
+    }
+
+    .main_cv .container .view_content .container_view .core_competencies h1,
+    .main_cv .container .view_content .container_view .certificate h1,
+    .main_cv .container .view_content .container_view .activities h1,
+    .main_cv .container .view_content .container_view .objective h1,
+    .main_cv .container .view_content .container_view .education h1,
+    .main_cv .container .view_content .container_view .github_projects h1 {
+        font-size: 15px;
+    }
+
+    .timeline-date,
+    .timeline-content h4,
+    .timeline-content p {
+        font-size: 13px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td:first-child {
+        width: 28%;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td:nth-child(2) {
+        width: 50%;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td[rowspan] {
+        width: 22%;
+        padding-left: 10px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .mobile_profile_photo {
+        display: none;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td[rowspan],
+    .main_cv .container .view_content .container_view .content_inf .profile_photo_cell,
     .main_cv .container .view_content .container_view .content_inf .profile_table img {
-        width: 3cm;
-        margin-left: auto;
+        display: none;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .head_role {
+        font-size: 11px;
+        padding: 4px 9px;
+        margin-bottom: 10px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td {
+        font-size: 13px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .profile_label {
+        font-size: 13px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .profile_address {
+        white-space: normal;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table img {
+        width: 4.1cm;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 96%;
+    }
+
+    .header_view .watch_cv {
+        font-size: 12px;
+    }
+
+    .header_view .btn_download {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .main_cv .container .view_content {
+        padding: 16px;
+    }
+
+    .main_cv .container .view_content .container_view {
+        font-size: 12px;
+    }
+
+    .main_cv .container .view_content .container_view .core_competencies h1,
+    .main_cv .container .view_content .container_view .certificate h1,
+    .main_cv .container .view_content .container_view .activities h1,
+    .main_cv .container .view_content .container_view .objective h1,
+    .main_cv .container .view_content .container_view .education h1,
+    .main_cv .container .view_content .container_view .github_projects h1 {
+        font-size: 14px;
+    }
+
+    .timeline-date,
+    .timeline-content h4,
+    .timeline-content p {
+        font-size: 12px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td {
+        font-size: 12px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .profile_label {
+        font-size: 12px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td:first-child {
+        width: 34%;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td:nth-child(2) {
+        width: 50%;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td[rowspan] {
+        display: none;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .head_name {
+        font-size: 19px;
+        line-height: 1.12;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table .head_role {
+        font-size: 10px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table img {
+        display: none;
     }
 }
 
@@ -462,6 +615,15 @@
 
     .main_cv .container .view_content .container_view .content_inf {
         margin-top: 14px;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table td[rowspan],
+    .main_cv .container .view_content .container_view .content_inf .profile_photo_cell {
+        display: table-cell !important;
+    }
+
+    .main_cv .container .view_content .container_view .content_inf .profile_table img {
+        display: block !important;
     }
 
     .main_cv .container {
